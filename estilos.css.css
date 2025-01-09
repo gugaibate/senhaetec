@@ -1,0 +1,132 @@
+/* Estilo Geral */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #007BFF;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #0056b3;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+/* Estilo para a senha atual */
+#currentSenha {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #FF4500;
+  margin: 20px 0;
+  animation: fadeIn 0.5s ease-in-out, slideDown 0.5s ease-in-out;
+}
+
+/* Estilo para o título do histórico */
+#userHistoryTitle {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* Estilo para o histórico de senhas */
+#userHistory {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.history-item {
+  animation: fadeIn 1s ease-in-out, slideUp 0.5s ease-in-out;
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #007BFF;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Botões administrativos */
+.admin-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-buttons button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.admin-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.admin-buttons button:active {
+  background-color: #003f7f;
+}
+
+/* Estilo do histórico na tela administrativa */
+#history {
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+#history div {
+  padding: 8px;
+  background-color: #e9ecef;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+img {
+  width: 20px; /* Ajuste o tamanho da imagem */
+  height: 20px; /* Mantenha a altura igual à largura para um formato quadrado (ícone) */
+  margin: 0; /* Remove as margens */
+  position: fixed; /* A imagem ficará fixada na tela */
+  top: 50%; /* Posiciona a imagem no meio verticalmente */
+  left: 0; /* Fixa a imagem no lado esquerdo da tela */
+  transform: translateY(-50%); /* Ajuste para centralizar verticalmente */
+}
